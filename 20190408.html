@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    1.const一旦声明变量，立即初始化，不得留到以后赋值。
+    2.声明变量的方法:var function let const import class
+    3.es6,全局变量逐步于顶层对象的属性脱钩
+    4.勉强获取顶层对象的两种方法：
+        方法一：(typeof window!=='undefined'?window:(typeof process==='object' && typeof require==='function' && typeof global==='object')?global:this)
+        方法二：var getGlobal=function(){
+            if(typeof self !== 'undefined'){return self;}
+            if(typof window !=='undefined'){return window;}
+            if(typeof global !== 'undefined'){return global;}
+            throe new Error('unable to locate global object');
+        }
+        提案，在语言标准的层面，引入global作为顶层对象
+    5.解构赋值(模式匹配，等号两边模式相同)
+        解构不成功变量的值为undefined
+        set结构也可以用数组的解构赋值
+    */
+    // var obj={
+    //     name:'sdl',
+    //     sld:'dkdk',
+    //     dkf:'dlf'
+    // }
+    // Object.keys(obj).forEach((key,index)=>{
+    //     console.log(key,index)
+    // })
+    //解构赋值
+    let abc=[a,b,c]=[5,10,15];
+    console.log(abc[0],[a],a);//5,[5],5
+    let [q,...e]=[3,6,9];
+    console.log(e);//[6,9]
+</script>
+</html>
