@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        span{color: red}
+    </style>
 </head>
 <body>
-    
 </body>
 <script>
+    /*
+    1.如果你为data属性使用了箭头函数，则this不会指向这个组件的实例
+    2.不应该使用箭头函数来定义 method 函数
+    */ 
     /*
     1.const一旦声明变量，立即初始化，不得留到以后赋值。
     2.声明变量的方法:var function let const import class
